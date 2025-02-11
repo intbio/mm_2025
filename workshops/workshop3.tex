@@ -1,0 +1,439 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lachaise Assignment
+% LaTeX Template
+% Version 1.0 (26/6/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Marion Lachaise & François Févotte
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+% Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{MMOD101: Workshop ``Analyzing 3D PDB structures.''} % Title of the assignment
+
+\author{Alexey K. Shaytan\\ \texttt{alex@intbio.org}} % Author name and email address
+
+\date{Lomonosov Moscow State University --- \today} % University, school and/or department name(s) and a date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{warn}[Requirements:]
+
+1) Pymol \url{http://www.pymol.org} 
+
+2) UCSF Chimera
+
+3) VMD
+
+4) Access to a Jupyter notebook evironment with Python 3, MDanalysis, nglview and prody libraries
+
+5) 3-button mouse
+\end{warn}
+
+\tableofcontents
+
+%use Pymol and UCSF Chimera programs for analysis
+%\section{do analysis in Python using MDanalysis and Prody libraries}
+%\section{select, extract and analyze atom coordinates and dihedral angles.}
+%\section{add hydrogens to the structure}
+%\section{identify hydrogen bonds}
+%\section{identify protonation states}
+%\section{assign charges to the atoms}
+%\section{compute and analyze electrostatic surface}
+%\section{build contact maps}
+%\section{identify domains}
+%\section{find homologous structures}
+%\section{make structural alignment, compute RMSD}
+%\section{generate sequence alignment from structural alignment}
+%\section{identify residue conservation}
+%\section{analyze dynamics using elastic networks models}
+
+
+
+
+\section{Use Pymol and UCSF Chimera programs for analysis}
+
+In my opinion Chimera is more comfortable and have all important tools for analisys.
+
+You can select structure on right list in Chimera, or you can fetch it by ID in ``File'' section.
+
+To select chains, atoms, etc you can do this in ``Select'' section
+
+Also you can click ``Favorites'' > sequence and select for witch chain you want to open sequence
+
+
+
+
+
+
+
+
+\section{do analysis in Python using MDanalysis and Prody libraries}
+
+To download file ``3Dstruct\_analysis.ipynb'' you need to have access to Newton 
+
+Or u can download it on our  \href{http://intbio.org/mol_model_course/workshops/3Dstruct_analysis/}{workshop} in \textbf{Jupiter notebook} section
+
+It's very important that the Kernel(core that is chosen for the interpretation) is called moldyn. To change Kernel press \textbf{Kernel>change kernel} and select right one
+
+In the beginig we have ``Hat'' where we can run code.
+
+And have some helpfull commands
+The first two lines, will reload libraries if they somehow change:
+
+: \%load\_ext autoreload
+
+: \%autoreload 2
+ 
+And the next two lines will turn off warnings, that can disturb us:
+
+: import warnings
+
+: warnings.filterwarnings('ignore')
+
+
+    If we want to download file, for comfort to download it right to the server, we can go to page that we are interested in, for example \href{https://www.rcsb.org/structure/1PKN}{}
+Click display files and copy PDB Format link (https://files.rcsb.org/view/1PKN.pdb)
+
+After that in Jupiter notebook we can run bash command(!wget (link)), that will download file to local directory \\
+
+    Also we have useful library \textbf{``nglview''} for structure viewing directly in Jupiter notebook 
+
+: import nglview as nv
+
+: view = nv.show\_structure\_file('1PKN.pdb')
+
+: view \\
+
+    \textbf{``MDAnalysis''} library need for trajectory analysis.
+
+: import MDAnalysis
+
+: u=MDAnalysis.Universe('1PKN.pdb')
+
+: s=u.select\_atoms('all')
+
+: nv.show\_mdanalysis(s)\\
+
+
+    \textbf{``Prody''} library need for dynamic and elastic network models analysis.
+
+: import prody
+
+: pkn = prody.parsePDB('1PKN.pdb')
+
+: nv.show\_prody(pkn)\\
+
+
+
+
+
+
+
+\section{Select, extract and analyze atom coordinates and dihedral angles.}
+
+    \textbf{Let's assume that we want to select coordinates of CA atoms and extract posistions of C-alpha atoms in MDAnalysis}\\
+    
+: s=u.select\_atoms('protein and name CA')
+
+: s.residues.atoms.names (you can press after ``s.'' TAB and chose one of the methods{} or commands in atom group) 
+  These are basics:
+\begin{itemize}
+    \item \textbf{s.n\_atoms} - counts atom quantity 
+
+    \item \textbf{s.center\_of\_mass\{\}} - center of mass coordinates (thos is metod and we need to write brakets \{\})
+
+    \item\textbf{s.n\_residues} - amount of residues
+
+\end{itemize}
+
+: s.atoms.positions \\
+
+%17:13 timecode
+
+    \textbf{Let's make a histogram of Calpha distances} \\
+
+: import numpy as np 
+
+: c[1:]
+
+: c=s.atoms.positions 
+
+  dvec=c[1:]=c[0:-1] 
+  
+  d=np.array([np.sqrt(i[0]**2=+i[1]**2+i[2]**2)]) for i in dvec
+
+: import seabon as sns          (seabon- library for graphics display )
+
+: sns.distplot(d[d<5])
+
+: s.radius\_of\_gyration \\
+
+
+    \textbf{Extract and amalyze diheral (torsion) angels} \\
+
+    MDAnalysis.analysis.dihedrals - sublibrary \\
+    
+    : from MDAnalysis.analysis.dihedrals import Dihedral
+    
+    : r=u.residues[1] 
+    
+    : r.phi\_selection().names       (function for any residue, that can select atoms that belongs to ``Ramachandran'' angles)
+    
+    : dih=Dihedral([r.phi\_selection()])
+    
+    : dih.run()
+    
+    : dih.angles \\
+    
+
+
+
+
+
+
+
+\section{Add hydrogens to the structure} \\
+
+    Reduce command - let you add hydrogens to standart output stream 
+
+: !reduce 1PKN.pdb \\
+
+Also you can output data to file \\
+
+: !reduce 1PKN.pdb > 1PKN\_H.pdb \\
+
+1PKN\_H.pdb - file name \\
+
+This programms better to install from anaconda, you need to make sure, that programms are installed to your correct OS channel \\
+
+
+
+
+
+
+
+
+
+\section{Identify hydrogen bonds}\\
+
+
+Go to \textbf{Chimera} click Tools - Surface/Binding Analysis - FindHBond \\
+
+
+
+
+
+
+
+\section{Identify protonation states} \\
+
+Use command ``!propka'' \\
+
+: !propka 1PKN.pdb 
+
+: !cat 1PKN.pka
+
+
+
+
+
+
+
+
+
+%40:00
+\section{assign charges to the atoms} \\
+
+: pdb2pqr 1PKN.pdb 1PKN.pqr --ff amber \\
+
+: !cat 1PKN.pqr \\
+
+
+
+
+
+
+
+%41:00
+\section{Compute and analyze electrostatic surface} \\
+
+Go to \textbf{Chimera}
+
+First of all you need to and charges click Tools - Structure Editing - PDB2PQR \\
+
+We can choose force field : AMBER \\
+
+So we have problem, that we have't \textbf{Executable location} \\
+
+Let's make new conda enviroment \\
+
+Go to commmand promt and write \\
+
+> conda create --name apbs \\
+>y
+
+Than go to anaconda.org \\
+
+Search for pdb2pqr \\
+
+Choose schrodinger/ pdb2pqr, and install it (copy paste command) \\
+
+Then search for apbs by schrodinger and install it (copy paste command) \\
+
+After that choose download Path in \textbf{Executable location} and apply \\
+
+
+So after these steps we can calculate and analyze electrostatic surface \\
+
+Click Tools - Surface/Binding Analysis - APBS \\
+
+If you want to color surface, first of all you need to create it \\
+
+Select all then click Action - Surface - show \\
+
+And in Surface color menu, we can color it by \textbf{electrostatic potential}
+
+
+
+
+
+
+
+%49:50
+\section{build contact maps} \\
+
+If we have distance matrix, we can use from ``scipy'' package ``pdist'' function, that calculate distance matrix
+
+: from scipy.spatial.distance import pdist,squareform \\
+
+: dm=suareform(pdist(c)) \\
+
+: dm.shape \\
+
+: ax = sns.heatmap(np.where(dm<12,1,0))       
+
+  ax.invert\_axis() \\
+  (np.where - function able to edit elements in matrix)
+
+
+
+
+
+
+
+%56:00
+\section{Identify domains}
+
+Here it is proposed to use various services for searching domains
+
+1) In NCBI Protein database \herf{https://www.ncbi.nlm.nih.gov/}, select Protein and write pdb code (1pkn), then select \textbf{Chain A Pyruvate\_Kinase} and click on \textbf{Identify Conserved Domains}\\
+
+2) Pfam database \href{http://pfam.xfam.org/}. Click on \textbf{view a structure} and write 1pkn, on opened page click on \textbf{Domain organisation}\\
+
+3) SCOP \href{http://scop.mrc-lmb.cam.ac.uk/}\\
+\\
+
+
+
+
+%64:00
+\section{Find homologous structures} \\
+
+In NCBI data base, as an example we take 1PKN protein. \\
+
+\href{https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?INPUT_TYPE=live&SEQUENCE=1PKN_A} \\
+
+It is comfrotable, that CDD classified it as a single domain. \\
+
+Click on + in \textbf{List of domain hits}, then click on \textbf{cd00288} \\
+
+So wee see full set of sequences. \\
+
+You can color them by Identity. \\
+
+To analyze by conservation, you need to count score in some cases with the Chanon entropy and color the structure according to it. \\
+
+So you can try to color it by consrvation in Chimera.
+
+Open sequence, click on \textbf{Edit} and \textbf{add sequence}. Let's add  \href{https://www.ncbi.nlm.nih.gov/protein/1A3W_A?report=fasta}{1A3W\_A}. \\
+
+Copy sequence and paste it in \textbf{Plain text} and press apply.
+
+And then click on \textbf{Headers} and select \textbf{Conservation}. \\
+
+After that click on \textbf{Structure} an \textbf{Render by conservation} and click Ok in opened window. \\
+
+
+
+
+\section{Make structural alignment, compute RMSD}\\
+
+Go to Chimera. So we see, taht we have similar structure 1A3W, download it to chimera. \\
+
+We see 2 structures, that we want to align. Click on \textbf{Tools}, then \textbf{Structure comparison} an select \textbf{MatchMaker}. \\
+
+Select wich structure you want alignt. In Chain pairing select \textbf{Best-align pair of chains} and press Ok \\
+
+
+
+
+
+\section{Generate sequence alignment from structural alignment}
+
+Now we have structural alignment. And we can reverse this procedure. Click on \textbf{Tools}, then \textbf{Structure comparison} an select \textbf{Match -> Align}. Select chains and press ok \\
+
+Sequence alignment based on structures is higher quality. \\
+
+
+
+
+
+\section{Analyze dynamics using elastic networks models}\\
+
+We'll use prody. \\
+
+Choose protein. \\
+
+:prot=pkn.select('protein') \\
+
+:anm, atoms = prody.calcANM(prot, selstr='calpha') \\
+
+:slowest\_mode = anm[0] \\
+
+:print( slowest\_mode ) \\
+
+:print( slowest\_mode.getEigval(),round(3) ) \\
+
+:prody.writeNMD('1pkn.nmd',anm[:3],atoms) \\
+
+So then we open our file in VMD to visualise it.
+
+Click \textbf{Extensions},then \textbf{Analysis} and select \textbf{Normal Mode Wizard}, and download file.
+
+
+
+
+
+
+\end{document}
