@@ -17,7 +17,7 @@
 2 credits, 72 academic hours
 
 ### Описание курса
-Курс направлен на формирование у учащихся теоретических представлений и базовых практических навыков в области компьютерного моделирования биологических молекул. В начале курса обсуждаются вопросы структурной биоинформатики, методов представления данных в структурной биологии, методов визуализации, оценки качества и анализа структур, в том числе сравнительного анализа. Обсуждаются практические аспекты испозования и запуска программных пакетов для молекулярного моделирования. Особое внимание уделяется подходам молекулярной механики (ММ) и имитационному моделированию методами молекулярной динамки (МД), в том числе с использованием методов управляемой и ускоренной МД. Обсуждаются методы основанные на применение концепция статистической физики, в том числе метод Монте-Карло (МК). Дается представление о методах хемоинформатики, скрининга, методах оценки количественных параметров структура-свойство (QSPR), структура-активность (QSAR), методах докинга. Дается обзор методов квантово-химического моделирования и гибридных методов квантовой механики-молекулярного моделирования (КМ/ММ). Рассматриваются различные методы предсказания структуры белков и биомакромолекулярных комплексов, включая методы основанные на машинном обучении и искуственном интеллекте (AlphaFold и др). Обсуждаются методы оценки количественных параметров биомолекул: аффинность связывания, эффекты мутаций, склонности к аггрегации и др. Внимание уделяется современным методам дизайна биологических молекул как на основе физически обсуловленных подходов, так и на основе методов искуственного интеллекта.
+Курс направлен на формирование у учащихся теоретических представлений и базовых практических навыков в области компьютерного моделирования биологических молекул с акцентом на моделирование трехмерных структур биомолекул. В начале курса обсуждаются вопросы структурной биоинформатики, методов представления данных в структурной биологии, методов визуализации, оценки качества и анализа структур, в том числе сравнительного анализа. Обсуждаются практические аспекты использования и запуска программных пакетов для молекулярного моделирования. Особое внимание уделяется подходам молекулярной механики (ММ) и имитационному моделированию методами молекулярной динамки (МД), в том числе с использованием методов управляемой и ускоренной МД. Обсуждаются методы основанные на применение концепций статистической физики, в том числе метод Монте-Карло (МК). Обсуждаются методы огрубленного, мезо-масштабного и интгеративного моделирования и оптимизации структур. Дается представление о методах хемоинформатики, скрининга, методах оценки количественных параметров структура-свойство (QSPR), структура-активность (QSAR), методах докинга. Дается обзор методов квантово-химического моделирования и гибридных методов квантовой механики-молекулярного моделирования (КМ/ММ). Рассматриваются различные методы предсказания структуры белков и биомакромолекулярных комплексов, включая методы основанные на машинном обучении и искуственном интеллекте (AlphaFold и др). Обсуждаются методы оценки количественных параметров биомолекул: аффинность связывания, эффекты мутаций, склонности к аггрегации и др. Внимание уделяется современным методам дизайна биологических молекул как на основе физически обсуловленных подходов, так и на основе методов искуственного интеллекта. Курс включает лекции, практические занятия и домашние задания.  
 
 The course provides an overview of molecular modeling and simulations methods in biology with an emphasis on 3D modeling of biomolecular structures. Covered topics include: viewing and anlyzing PDB structures, structural bioinformatics, molecular dynamics simulations, Monte-Carlo simulations, coarse-grained modeling, molecular screening, docking, model building from experimental data, integrative modeling, quantum chemistry calculations, protein structure prediction.  The course include both lectures, hands-on exercises and home assignments.  
 
@@ -25,16 +25,19 @@ The course provides an overview of molecular modeling and simulations methods in
 - To understand:
      - the principle of molecular modeling techniques in biology.
      - the spectrum of molecular modeling and simulations methods and their applicability.
-     - the relation between the experimental data and structural models. 
+     - the relation between the experimental data, structural models and molecular simulations. 
 - To be able to:
      - vizualize and analyze PDB-structure files.
      - run basic MD simulations.
-     - do comparative protein modeling and use protein structure prediction tools.
-     - Run basic docking simulations.
-     - Run basic quantum chemistry simulations.
+     - do protein structure, and biomolecular complex prediction using differen tools.
+     - run protein stucture design algorithms
+     - setup integrative modeling pipelines and structure refinment
+     - run basic QSAR assesments
+     - run basic docking simulations.
+     - run basic quantum chemistry simulations.
 
  
-### Textbooks and learning resources
+### Textbooks and learning resources (to be updated)
 - H.-D. Höltje et al. Molecular Modeling: Basic Principles and Applications, 3rd Edition [English](https://www.wiley.com/en-us/Molecular+Modeling%3A+Basic+Principles+and+Applications%2C+3rd+Edition-p-9783527315680), [Russian](https://www.ozon.ru/context/detail/id/19483913/)
 - J. Gu, Ph. Bourne. Structural Bioinformatics, 2nd Edition [English](https://www.wiley.com/en-us/Structural+Bioinformatics%2C+2nd+Edition-p-9780470181058)
 - D.C. Young Computational Chemistry: A Practical Guide for Applying Techniques to Real World Problems [Link](https://onlinelibrary.wiley.com/doi/book/10.1002/0471220655)
@@ -48,14 +51,13 @@ The course provides an overview of molecular modeling and simulations methods in
 
 ### Required resources
  1. Laptop or workstation with access to internet.
- 2. An account on Sandbox Server 
- 3. [Pymol](https://pymol.org/2/) installed locally on your workstation/laptop.
- 4. [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) installed locally on your workstation/laptop.
- 5. [VMD](https://www.ks.uiuc.edu/Research/vmd/) installed locally on your workstation/laptop.
+ 2. [Pymol](https://pymol.org/2/) installed locally on your workstation/laptop.
+ 3. [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) installed locally on your workstation/laptop.
+ 4. [VMD](https://www.ks.uiuc.edu/Research/vmd/) installed locally on your workstation/laptop.
 
 
 ### Course calendar
-- Dates: 7/2/2024; 14/2/2024; 21/2/2024; 28/2/2024; 6/3/2024; 13/3/2024; 20/3/2024; 27/3/2024; 3/4/2024; 17/4/2024; 24/4/2024; ?8/5/2024; 15/5/2024; 
+- Dates: 12/2/2025; 19/2/2025; 26/2/2025; 5/3/2025; 12/3/2025; 26/3/2025; 2/4/2025; 9/3/2025;? 16/4/2025; 23/4/2025; 30/4/2025; 7/5/2025?; 14/5/2025; 
 
 ### Attendance policy
 - 100% attendance is required
@@ -64,9 +66,9 @@ The course provides an overview of molecular modeling and simulations methods in
 
 ### Assignments policy
 - Assignments are due in two weeks.
-- Assignments should be uploaded via [this link](https://www.dropbox.com/request/YZeuqKGGBT1bQhikDmF1) in one file (doc, pdf, zip). The name of the file is as follows: Asgmt_Number_Surname_Initials. E.g. Asgmt_2_Petrov_AV.pdf
+- Assignments should be uploaded via [this link](https://www.dropbox.com/request/qaKsB7oTLczzHHnyzOAy) in one file (doc, pdf, zip). The name of the file is as follows: Asgmt_Number_Surname_Initials. E.g. Asgmt_2_Petrov_AV.pdf
 - Assignments are graded on a 100 point scale
-- Late policy: 10 points are deducted for week the assignment is late. 
+- Late policy: 10 points are deducted for each week the assignment is late. 
 
 ### Course program (in Russian)
 
