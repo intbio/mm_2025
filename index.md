@@ -6,6 +6,7 @@
 - Teaching assistant: Nikita Kosarim, Anastasiia Kniazeva
 - [Telegram link](https://t.me/+n-pc8o4uIAU5ZmYy)
 - [Home work folder](https://www.dropbox.com/request/qaKsB7oTLczzHHnyzOAy)
+- [Bioeng distant link](https://distant.bioeng.ru/b/tn9-3jg-mq1-hbp)
 
 ### Meetings and Location
 - Classroom: Bioeng Dept. (Leninskie Gory 1-73), rooms 542, 543
