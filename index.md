@@ -1,22 +1,24 @@
-<a href="https://github.com/intbio/mm_2024/blob/main/index.md"><img style="position: absolute; top: 0; right: 0; border: 0;" src="gitimg.png" alt="To GitHub"></a>
-# Molecular Modeling and Simulations for Biologists (Spring 2024)
+<a href="https://github.com/intbio/mm_2025/blob/main/index.md"><img style="position: absolute; top: 0; right: 0; border: 0;" src="gitimg.png" alt="To GitHub"></a>
+# Молекулярное моделирование (Весна 2025, Магистерская программа структурная биология)
 
 ### Contact information
-- Instructor: Alexey K. Shaytan, PHD alex@intbio.org
-- Teaching assistant: 
-- [Telegram link](https://t.me/+RUEuM8rctSY0ZmFi)
-- [Home work folder](https://www.dropbox.com/request/YZeuqKGGBT1bQhikDmF1)
+- Instructor: Alexey K. Shaytan, PHD shaytanak@my.msu.ru
+- Teaching assistant: Nikita Kosarim, Anastasiia Kniazeva
+- [Telegram link](https://t.me/+n-pc8o4uIAU5ZmYy)
+- [Home work folder](https://www.dropbox.com/request/qaKsB7oTLczzHHnyzOAy)
 
 ### Meetings and Location
 - Classroom: Bioeng Dept. (Leninskie Gory 1-73), rooms 542, 543
 - Lectures: Wednesday 9:00-10:35
-- Seminars: 15:00 - 16:35
+- Seminars: 11:00 - 12:35
 
 
 ### Credits
 2 credits, 72 academic hours
 
-### Course Description
+### Описание курса
+Курс направлен на формирование у учащихся теоретических представлений и базовых практических навыков в области компьютерного моделирования биологических молекул. В начале курса обсуждаются вопросы структурной биоинформатики, методов представления данных в структурной биологии, методов визуализации, оценки качества и анализа структур, в том числе сравнительного анализа. Обсуждаются практические аспекты испозования и запуска программных пакетов для молекулярного моделирования. Особое внимание уделяется подходам молекулярной механики (ММ) и имитационному моделированию методами молекулярной динамки (МД), в том числе с использованием методов управляемой и ускоренной МД. Обсуждаются методы основанные на применение концепция статистической физики, в том числе метод Монте-Карло (МК). Дается представление о методах хемоинформатики, скрининга, методах оценки количественных параметров структура-свойство (QSPR), структура-активность (QSAR), методах докинга. Дается обзор методов квантово-химического моделирования и гибридных методов квантовой механики-молекулярного моделирования (КМ/ММ). Рассматриваются различные методы предсказания структуры белков и биомакромолекулярных комплексов, включая методы основанные на машинном обучении и искуственном интеллекте (AlphaFold и др). Обсуждаются методы оценки количественных параметров биомолекул: аффинность связывания, эффекты мутаций, склонности к аггрегации и др. Внимание уделяется современным методам дизайна биологических молекул как на основе физически обсуловленных подходов, так и на основе методов искуственного интеллекта.
+
 The course provides an overview of molecular modeling and simulations methods in biology with an emphasis on 3D modeling of biomolecular structures. Covered topics include: viewing and anlyzing PDB structures, structural bioinformatics, molecular dynamics simulations, Monte-Carlo simulations, coarse-grained modeling, molecular screening, docking, model building from experimental data, integrative modeling, quantum chemistry calculations, protein structure prediction.  The course include both lectures, hands-on exercises and home assignments.  
 
 ### Learning objectives
