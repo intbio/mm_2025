@@ -58,7 +58,7 @@ The course provides an overview of molecular modeling and simulations methods in
 
 
 ### Course calendar
-- Dates: 12/2/2025; 19/2/2025; 26/2/2025; 5/3/2025; 12/3/2025; 26/3/2025; 2/4/2025; 9/3/2025;? 16/4/2025; 23/4/2025; 30/4/2025; 7/5/2025?; 14/5/2025; 
+- Dates: 12/2/2025; 19/2/2025; 26/2/2025; 5/3/2025; 12/3/2025; 26/3/2025; 2/4/2025; 9/4/2025;? 16/4/2025; 23/4/2025; 30/4/2025; 7/5/2025?; 14/5/2025; 
 
 ### Attendance policy
 - 100% attendance is required
