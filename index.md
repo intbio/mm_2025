@@ -216,8 +216,8 @@ The course provides an overview of molecular modeling and simulations methods in
 
 #### Модуль 4. Предсказание и дизайн структуры белков (2 недели).
 
-<details><summary><ins>Лекция 8</ins> Методы предсказания структры белков.</summary> Моделирование по гомологии. Создание выравнивания. Оценка качества модели. Детекция фолда. Протягивание. Скрытые марковские модели. Нейросети. Физические методы моделирования и предсказания.
-<a href="https://www.dropbox.com/scl/fi/ds60diviuhjmjrsa8qlx1/Lecture8_new.pptx?rlkey=yi0zrvvo77tm2qpkg2cb6mno3&dl=0">Слайды лекции.</a> <a href="https://example.com">Видеозапись.</a>
+<details><summary><ins>Лекция 8</ins> Методы предсказания структры белков и биомакромолекулярных комплексов.</summary> Постановка задачи, почему необходимы методы предсказания? Моделирование по гомологии: воздание выравнивания, оценка качества модели. Методы детекции фолда (протягивание). Поиск гомологов и предсказание структуры на оснвое вкрытых марковскиех моделей. Физические методы моделирования и предсказания: МД, Rosetta/Robetta, сборка белка из фрагментов (fragment based assembly). Гибридные подходы: iTASSER. Коэволюционные подходы. Нейросетевые подходы: AlphaFold, ESM, RoseTTAFold,AlphaFold3. Моделирование комплексов и взаимодействий:  AlphaFoldMultimer, AlphaFold3, Boltz, Chai, Neo, RoseTTAFoldNA, RF2-ppi. Сервера: AlphaFoldDB,FoldSeek. CollabFold.
+<a href="https://www.dropbox.com/scl/fi/zffn1eaic2w61mr2bx4fh/Lecture8_2025_spring.pptx?rlkey=0fkhwoqct5tcmd9cksze9qtu4&dl=0">Слайды лекции.</a> <a href="https://example.com">Видеозапись.</a>
 </details>
      
 <details><summary><ins>Семинар 8</ins> Знакомство с программами Modeller и AlphaFold.</summary> Знакомство с программой Modeller. Построение структурных моделей по гомологии с с известными структурами.  
