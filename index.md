@@ -220,8 +220,8 @@ The course provides an overview of molecular modeling and simulations methods in
 <a href="https://www.dropbox.com/scl/fi/zffn1eaic2w61mr2bx4fh/Lecture8_2025_spring.pptx?rlkey=0fkhwoqct5tcmd9cksze9qtu4&dl=0">Слайды лекции.</a> <a href="https://example.com">Видеозапись.</a>
 </details>
      
-<details><summary><ins>Семинар 8</ins> Знакомство с программами Modeller и AlphaFold.</summary> Знакомство с программой Modeller. Построение структурных моделей по гомологии с с известными структурами.  
-<a href="workshops/Modeller">Протокол семинара.</a>
+<details><summary><ins>Семинар 8</ins> Знакомство с программами AlphaFold 2 и AlphaFold 3.</summary> Знакомство с программами AlphaFold 2 и AlphaFold 3. Построение структурных моделей на основе белковой последовательности и интерпретация результатов.  
+<a href="workshops/AlphaFold">Протокол семинара.</a>
 </details>
 
 <details><summary><ins>Самостоятельная работа 8</ins></summary> 
