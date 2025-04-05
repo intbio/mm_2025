@@ -11,7 +11,7 @@
     - Compare and cross-validate predicted structure models
 
 ## AlphaFold2  
-- [Colab notebook](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb)
+- [Colab notebook](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb)
 - [ColabFold paper](https://www.biorxiv.org/content/10.1101/2021.08.15.456425v2)
 - [LocalColabFold](https://github.com/YoshitakaMo/localcolabfold)
 - [ChimeraX example](https://www.youtube.com/watch?v=le7NatFo8vI&ab_channel=UCSFChimeraX)
