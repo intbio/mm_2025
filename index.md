@@ -229,7 +229,7 @@ The course provides an overview of molecular modeling and simulations methods in
 </details>
 
 
-<details><summary><ins>Лекция 9. </ins> Методы дизайна структуры белков.</summary> История. Цели, задпчи. Создание мутантных белков, термостабильных белков. Предсказание влияния аминокислотных замен. De novo дизайн белков. Подходы к оптимизации структуры. Мультимасштабные подходы. Пример подходов в программе Rosetta. Примеры искусственно созданных белков. Дизайн байндеров. ИИ подходы. ProteinMPNN. RFdiffusion. BindCraft. Языковые модели. Prompt engineering.
+<details><summary><ins>Лекция 9. </ins> Методы дизайна структуры белков.</summary> Практическое значение. Типы задач. Оптимизация и de novo дизайн. Дизайн ферментов, мембранных белков, белковых байндеров, байндеров малых молекул, антител, нанотел, дизайн ДНК/РНК байндеров. De novo дизайн. Принципиальная сложность задачи, комбинаторное пространство последовательностей, парадокс левинталя, проблема «яйца и курицы». История вопроса, подходы к дизайну белков, repacking, дизайн на основе библиотек фрагментов, белки на основе альфа-спиралей, альбебетин, TOP7, Rosetta. Влияние мутаций, термостабильность. Оптимизация растворимости и агрегации. In silico affinity maturation. De novo дизайн белков. Классические подходы программы Rosetta. Методы на основе генеративных нейронных сетей. AlphaFold2/AlphaDesign. trRosetta hallucination. ProteinMPNN. RFDiffusion. COMBS. BindCraft. Языковые модели. Prompt engineering.
 
 <a href="https://www.dropbox.com/scl/fi/hagjpwdpjw7rvda0mutun/Lecture9_2025_spring.ppt?rlkey=y11xmzzeyfnmydzilzj6tdvka&dl=0">Слайды лекции.</a>
 </details>
