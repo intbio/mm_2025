@@ -9,14 +9,14 @@
     - Understand how to generate new protein scaffolds using RFDiffusion 
 
 ## Jupyter notebooks
-- [Workshop notebook]()
-- ProteinMPNN [basic](https://colab.research.google.com/github/sokrypton/ColabDesign/blob/v1.1.0/mpnn/examples/proteinmpnn_in_jax.ipynb) and [example](https://colab.research.google.com/github/dauparas/ProteinMPNN/blob/main/colab_notebooks/quickdemo.ipynb)
+- [Workshop notebook](https://colab.research.google.com/drive/1aR63ETRxMPeEmmQtZKut65qAiF7LSy9A?usp=sharing)
+- ProteinMPNN colabs [basic](https://colab.research.google.com/github/sokrypton/ColabDesign/blob/v1.1.0/mpnn/examples/proteinmpnn_in_jax.ipynb) and [example](https://colab.research.google.com/github/dauparas/ProteinMPNN/blob/main/colab_notebooks/quickdemo.ipynb)
 - [ProteinMPNN Github](https://github.com/dauparas/ProteinMPNN)
 - [RFDiffusion Colab](https://colab.research.google.com/github/sokrypton/ColabDesign/blob/v1.1.1/rf/examples/diffusion.ipynb#scrollTo=tVAE0BrnZoRR)
 - [RFDiffusion Github](https://github.com/RosettaCommons/RFdiffusion/tree/main)
 
 ## Required software and resources
-- Easiest way is to use Google Colab Google Drive - see tutorial for initialization instructions. However, this will require a lengthy download.
+- Plenty of Google Colab notebooks to go around
 - Local installation of RFDiffusion requires pyRosetta license: see the original repository for the details
 
 ## Learning resources
@@ -34,4 +34,4 @@ Take a structure of interest with 2 (or more) interacting proteins:
 
 ### Troubleshooting
 - Consult with the seminar protocol/recording
-- Ask questions in Slack
+- Ask questions in Telegram
