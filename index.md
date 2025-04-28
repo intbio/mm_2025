@@ -234,8 +234,8 @@ The course provides an overview of molecular modeling and simulations methods in
 <a href="https://www.dropbox.com/scl/fi/hagjpwdpjw7rvda0mutun/Lecture9_2025_spring.ppt?rlkey=y11xmzzeyfnmydzilzj6tdvka&dl=0">Слайды лекции.</a>
 </details>
      
-<details><summary><ins>Семинар 9</ins> Знакомство с программой Rossetta.</summary> 
-<a href="workshops/Rosetta">Протокол семинара.</a>
+<details><summary><ins>Семинар 9</ins> Знакомство с программами ProteinMPNN и RFDiffusion.</summary> 
+<a href="workshops/RFDiffusion">Протокол семинара.</a>
 </details>
 
 <details><summary><ins>Самостоятельная работа 9</ins></summary> 
